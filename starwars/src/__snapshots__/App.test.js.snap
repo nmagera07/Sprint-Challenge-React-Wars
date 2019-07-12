@@ -4,17 +4,84 @@ exports[`<App /> should match snapshot 1`] = `
 <div
   className="App"
 >
-  <h1
-    className="Header"
+  <div
+    className="nav-bar"
   >
-    React Wars
-  </h1>
-  <img
-    alt="star wars logo"
-    src="https://vignette.wikia.nocookie.net/starwars/images/c/cc/Star-wars-logo-new-tall.jpg/revision/latest?cb=20190313021755"
-  />
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      href="/characters"
+      onClick={[Function]}
+    >
+      Star Wars API
+    </a>
+    <a
+      href="/dogAPI"
+      onClick={[Function]}
+    >
+      Dog API
+    </a>
+    <h2>
+      Welcome to APIs!
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`<Characters /> should match snapshot 1`] = `
+<div>
+  <div
+    className="character-header"
+  >
+    <h1>
+      React Wars
+    </h1>
+    <img
+      alt="star wars logo"
+      src="https://vignette.wikia.nocookie.net/starwars/images/c/cc/Star-wars-logo-new-tall.jpg/revision/latest?cb=20190313021755"
+    />
+  </div>
   <div
     className="character"
-  />
+  >
+    <div
+      className="card"
+    >
+      <div
+        className="ui centered card"
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            Luke Skywalker
+             
+            <i
+              aria-hidden="true"
+              className="space shuttle icon"
+              onClick={[Function]}
+            />
+          </div>
+          <button
+            className="ui button"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            Click for more info
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

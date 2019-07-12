@@ -7,7 +7,7 @@ const DogAPI = (props) => {
 
   useEffect(() => {
     axios
-      .get(`https://dog.ceo/api/breeds/image/random/5`)
+      .get(`https://dog.ceo/api/breeds/image/random/6`)
       .then(response => {
         console.log(response.data.message)
         setDog(response.data.message)
