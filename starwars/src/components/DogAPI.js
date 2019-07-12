@@ -20,7 +20,7 @@ const DogAPI = (props) => {
             <h1>Look at the doggos</h1>
         <div className="doggos">
             {dog.map(dog => {
-                return <div>
+                return <div key={dog}>
                 <img src={dog} alt="dogs"></img>
                 </div>
             })}
