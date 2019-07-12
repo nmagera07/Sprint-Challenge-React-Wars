@@ -1,29 +1,27 @@
 import React, {} from 'react';
-import { Card, Button } from 'semantic-ui-react'
+import { Card, Button, Modal, Icon } from 'semantic-ui-react'
 
 const Characters = (props) => {
     return ( 
-        <div>
+        <div className="character">
             {props.character.map(person => 
-            <div className="character">
-                <Card centered>
+            <div className="card">
+                <Card centered >
                      <Card.Content>
-                        <Card.Header>{person.name}</Card.Header>
-                        <Card.Meta>Birth Year: {person.birth_year}</Card.Meta>
-                        <Card.Description>
-                        Steve wants to add you to the group <strong>best friends</strong>
-                        </Card.Description>
-                    </Card.Content>
-                    <Card.Content extra>
-                        <div className='ui two buttons'>
-                        <Button basic color='green'>
-                            Approve
-                        </Button>
-                        <Button basic color='red'>
-                            Decline
-                        </Button>
-                        </div>
-                    </Card.Content>
+                        <Card.Header>{person.name} <Icon name='space shuttle'/></Card.Header>
+                        <Modal trigger={<Button>Click for more info</Button>}>
+                            <Modal.Header>{person.name}</Modal.Header>
+                            <Modal.Content >
+                            <Modal.Description>
+                                <p>Birth Year: {person.birth_year}</p>
+                                <p>Gender: {person.gender}</p>
+                                <p>Height: {person.height}</p>
+                                <p>Mass: {person.mass}</p>
+                                <p>Eye Color: {person.eye_color}</p>
+                            </Modal.Description>
+                            </Modal.Content>
+                        </Modal>
+                        </Card.Content>
                 </Card>
             </div>
                 )}
