@@ -17,8 +17,41 @@
   margin: 25px;
 }
 
-img {
+.character-header {
+  margin-top: 50px;
+}
+
+.character-header img {
   height: 300px;
-  margin-bottom: -125px;
+  margin-bottom: -150px;
   border-radius: 20px;
+  
+}
+
+.doggos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 150px;;
+}
+
+.doggos img {
+  height: 300px;
+  width: 400px;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+.nav-bar a{
+  margin: 40px;
+  
+}
+
+.nav-bar {
+  background: rgba(206, 206, 209, 0.815);
+  height: 75px;
+}
+
+.doggos-title {
+  margin-top: 50px;
+ 
 }

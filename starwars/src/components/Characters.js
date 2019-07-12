@@ -6,9 +6,17 @@ const Characters = (props) => {
     
     return ( 
         
-        <div className="character">
+        <div>
+            <div className='character-header'>
+            <h1>React Wars</h1>
+            <img src="https://vignette.wikia.nocookie.net/starwars/images/c/cc/Star-wars-logo-new-tall.jpg/revision/latest?cb=20190313021755" alt="star wars logo"></img>
+            </div>
+            <div className="character">
+            
+            
             {props.character.map(person => 
             <div className="card" key={person.name}>
+                
                 <Card centered >
                      <Card.Content>
                         <Card.Header>{person.name} <Icon name='space shuttle'/></Card.Header>
@@ -28,6 +36,7 @@ const Characters = (props) => {
                 </Card>
             </div>
                 )}
+                </div>
         </div>
      );
 }

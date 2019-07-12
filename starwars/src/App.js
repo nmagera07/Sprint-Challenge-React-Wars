@@ -3,6 +3,9 @@ import axios from 'axios'
 import './App.css';
 import 'semantic-ui-css/semantic.min.css'
 import Characters from './components/Characters'
+import Nav from './components/Nav'
+import DogAPI from './components/DogAPI'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -27,10 +30,15 @@ const App = () => {
   
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
-      <img src="https://vignette.wikia.nocookie.net/starwars/images/c/cc/Star-wars-logo-new-tall.jpg/revision/latest?cb=20190313021755" alt="star wars logo"></img>
-      <Characters character={character} />
-      
+      <Router>
+      <Route path="/" component={Nav} />
+      <Route path="/characters" 
+        render={props => 
+          <Characters {...props} character={character} />
+        }
+        />
+     <Route path="/dogAPI" component={DogAPI}></Route>
+      </Router>
       
     </div>
   );
