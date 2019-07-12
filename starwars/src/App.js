@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from 'react';
 import axios from 'axios'
 import './App.css';
+import 'semantic-ui-css/semantic.min.css'
 import Characters from './components/Characters'
 
 const App = () => {
