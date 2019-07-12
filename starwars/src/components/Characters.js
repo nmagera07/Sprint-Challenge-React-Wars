@@ -2,10 +2,13 @@ import React, {} from 'react';
 import { Card, Button, Modal, Icon } from 'semantic-ui-react'
 
 const Characters = (props) => {
+    console.log("props",props)
+    
     return ( 
+        
         <div className="character">
             {props.character.map(person => 
-            <div className="card">
+            <div className="card" key={person.name}>
                 <Card centered >
                      <Card.Content>
                         <Card.Header>{person.name} <Icon name='space shuttle'/></Card.Header>

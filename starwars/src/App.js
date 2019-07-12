@@ -13,6 +13,7 @@ const App = () => {
   // sync up with, if any.
   const [character, setCharacter] = useState([])
 
+
   useEffect(() => {
     axios
       .get(`https://swapi.co/api/people/`)
@@ -23,14 +24,14 @@ const App = () => {
       .catch(error => console.log('things went south...way south'))
   }, [])
 
-  // console.log(response.data.next)
+  
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <img src="https://vignette.wikia.nocookie.net/starwars/images/c/cc/Star-wars-logo-new-tall.jpg/revision/latest?cb=20190313021755" alt="star wars logo"></img>
       <Characters character={character} />
       
-      {/* <button>{character.data.next}</button> */}
+      
     </div>
   );
 }
