@@ -1,8 +1,57 @@
 .App {
   text-align: center;
+  
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.character {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 200px;
+}
+
+.card {
+  margin: 25px;
+}
+
+.character-header {
+  margin-top: 50px;
+}
+
+.character-header img {
+  height: 300px;
+  margin-bottom: -150px;
+  border-radius: 20px;
+  
+}
+
+.doggos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 150px;;
+}
+
+.doggos img {
+  height: 300px;
+  width: 400px;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+.nav-bar a{
+  margin: 40px;
+  
+}
+
+.nav-bar {
+  background: rgba(206, 206, 209, 0.815);
+  height: 75px;
+}
+
+.doggos-title {
+  margin-top: 50px;
+ 
+}
